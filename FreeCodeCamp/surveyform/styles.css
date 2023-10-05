@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://www.uc-bcf.edu.ph/assets/images/slides/slide-celebrate-75-years-icon.jpg);
+    font-family: sans-serif;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-family: Impact, serif;
+  }
+  
+  label {
+    font-family:  serif;
+  }
+  
+  button {
+    margin: .1em;
+    font-size: 1em;
+    font-family: serif;
+    text-transform: capitalize;
+    border: auto;
+    padding: 5px;
+    border-radius: 1px;
+  }
+  
+  submitbutton {
+    display: flex; 
+    justify-content: center;
+  }
