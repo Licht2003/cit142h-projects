@@ -1,44 +1,67 @@
 body {
-    background-image: url(https://www.uc-bcf.edu.ph/assets/images/slides/slide-celebrate-75-years-icon.jpg);
-    font-family: sans-serif;
-    padding: 50px;
-  }
-  
-  h1 {
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  
-  h1, p {
-    text-align: center;
-  }
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  h1 {
-    font-family: Impact, serif;
-  }
-  
-  label {
-    font-family:  serif;
-  }
-  
-  button {
-    margin: .1em;
-    font-size: 1em;
-    font-family: serif;
-    text-transform: capitalize;
-    border: auto;
-    padding: 5px;
-    border-radius: 1px;
-  }
-  
-  submitbutton {
-    display: flex; 
-    justify-content: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#title {
+  font-size: 24px;
+}
+
+#description {
+  font-size: 16px;
+}
+
+#survey-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: block;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
