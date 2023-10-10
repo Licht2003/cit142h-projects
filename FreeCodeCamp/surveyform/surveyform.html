@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <header>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
-  </header>
-
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description" class="established">Thank you for taking the time to help us!</p>
-    <form id="survey-form" action='https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a'>
-      <fieldset>
-        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
-        <p></p>
-        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
-        <p></p>
-        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="110" placeholder="Age"/></label>
-        <label> Which option best describes your current role?
-          <select id="dropdown">
-            <option value="">Select current role</option>
-            <option value="1">Student</option>
-            <option value="2">Parent</option>
-            <option value="3">Working</option>
-            <option value="4">Prefer not to say</option>
-            <option value="5">Other</option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset>
-        <label>Are you a Student of University of The Cordilleras?</label>
-        <p></p>
-        <input type="radio" type="checkbox" value="Yes"> <label for="Yes">Yes</label>
-        <input id="lazy" type="checkbox" value="No"> <label for="No">No</label>
-        <input id="energetic" type="checkbox" value="I rather not to say."> <label for="I rather not to say"> I rather not to say</label>
-      </fieldset>
-      <fieldset>
-        <label> Any comments or suggestions?
-          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
-        </label>
-      </fieldset>
-      <fieldset>
-        <input type="submit" value="Submit" id="submit" />
-      </fieldset>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this survey to help us improve.</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="99" required>
+        </div>
+        <div class="form-group">
+            <label for="dropdown">Select an option</label>
+            <select id="dropdown">
+                <option value="option1">Student</option>
+                <option value="option2">Working Student</option>
+                <option value="option3">Parent</option>
+                <option value="option4">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Choose your gender</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Prefet not to say"> Prefer not to say
+                    </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Choose your interests</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="interests" value="sports"> Sports
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="music"> Music
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="Gaming"> Gaming
+                    </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your comments"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
     </form>
-  </body>
+</body>
 </html>
-      
