@@ -1,0 +1,36 @@
+
+#header {
+    background-color: white;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    display: flex;
+}
+
+#section1 {
+    padding: 20px;
+}
+
+.header-img{
+    max-width: 200px;
+    max-height: 200px;
+    max-align: center;
+}
+
+p {
+    color: black;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+    margin-left: 160px;
+    margin-right: auto;
+  }
+
+  section {
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  width: 50%;
+  border: none;
+  }
