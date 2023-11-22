@@ -1,0 +1,22 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 300px;
+}
+.item{
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.item {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
