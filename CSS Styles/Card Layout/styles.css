@@ -11,12 +11,12 @@ body {
 .card {
     width: 300px;
     background-color: rgb(203, 226, 234);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     
-    transition: transform 0.3s ease-in-out;
-    margin: 20px;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
 }
 
 .card:hover {
